@@ -1,0 +1,157 @@
+@import url('https://fonts.googleapis.com/css2?family=Indie+Flower&display=swap');
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --background-color: #ffffff;
+  --text-color: #171717;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --background-color: #18181b;
+    --background-secondary-color: #27272A;
+    --text-color: #f4f4f5;
+    --text-secondary-color: #999999;
+    --text-effect-color: #ed9d63;
+    --link-color: #63b3ed;
+    --link-secondary-color: #90cdf4;
+    --text-base: 1rem;
+    --text-lg: 1.125rem;
+    --text-xl: 1.25rem;
+    --text-2xl: 1.5rem;
+    --text-3xl: 1.875rem;
+    --text-4xl: 2.25rem;
+    --text-5xl: 3rem;
+    --button-height-mobile: 60px;
+  }
+}
+
+@layer utilities {
+  .custom-text-color {
+    color: var(--text-color);
+  }
+
+  .custom-text-secondary-color {
+    color: var(--text-secondary-color);
+  }
+
+  .custom-text-dark-color {
+    color: var(--background-secondary-color);
+  }
+
+  .custom-text-effect-color {
+    color: var(--text-effect-color);
+  }
+
+  .custom-background-color {
+    background-color: var(--background-color);
+  }
+
+  .custom-background-secondary-color {
+    background-color: var(--background-secondary-color);
+  }
+
+  .custom-background-light-color {
+    background-color: var(--text-color);
+  }
+
+  .custom-button-height-mobile {
+    height: var(--button-height-mobile);
+  }
+
+  .custom-pt-button-height-mobile {
+    padding-top: var(--button-height-mobile);
+  }
+
+  .custom-link-current {
+    text-decoration-line: underline;
+    text-decoration-style: solid;
+    text-underline-offset: 0.25rem;
+  }
+
+  .custom-link {
+    color: var(--link-color);
+    text-decoration-line: underline;
+    text-decoration-style: dotted;
+    text-underline-offset: 0.25rem;
+  }
+
+  .custom-link:hover, .custom-link:active, .custom-link:focus {
+    color: var(--link-secondary-color);
+    text-decoration-line: underline;
+    text-decoration-style: solid;
+    text-underline-offset: 0.25rem;
+  }
+
+  .custom-link-image {
+    box-sizing: border-box;
+    border: 3px solid;
+    border-color: transparent;
+  }
+
+  .custom-link-image:hover, .custom-link-image:active, .custom-link-image:focus {
+    border: 3px solid;
+    border-color: var(--link-secondary-color);
+  }
+
+  .custom-text-effect {
+    font-family: "Indie Flower", serif;
+    font-weight: 400;
+    font-style: normal;
+  }
+}
+
+body {
+  color: var(--text-color);
+  background: var(--background-color);
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 16px;
+}
+
+h1 {
+  font-size: var(--text-5xl);
+  line-height: 1.2; 
+  margin-bottom: 1.25rem;
+}
+
+h2 {
+  font-size: var(--text-4xl);
+  line-height: 1.3; 
+  margin-bottom: 1.125rem;
+}
+
+h3 {
+  font-size: var(--text-3xl);
+  line-height: 1.4; 
+  margin-bottom: 1rem;
+}
+
+p {
+  font-size: var(--text-base);
+  line-height: 1.6;
+  margin-bottom: 1rem;
+  color: var(--text-color);
+}
+
+a {
+  color: var(--link-color);
+  text-decoration-line: underline;
+  text-decoration-style: dotted;
+  text-underline-offset: 0.25rem;
+}
+
+header a {
+  color: var(--link-color);
+  text-decoration-line: none;
+  text-underline-offset: 0.25rem;
+}
+
+a:hover, a:active, a:focus, 
+header a:hover, header a:active, header a:focus {
+  color: var(--link-secondary-color);
+  text-decoration-line: underline;
+  text-decoration-style: solid;
+  text-underline-offset: 0.25rem;
+}
