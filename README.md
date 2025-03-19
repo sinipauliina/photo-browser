@@ -56,14 +56,14 @@ Got any questions? Feel free to send me an email!
   * `store/` <-- Zustand stores
   * `styles/` <-- Global styles including custom classes
   * `types/` <-- TypeScript types
-  * `.env` <-- Environmental variables
-  * `.gitignore` <-- Files and directories to be ignored by Git
-  * `eslint-rules.mjs` <-- Custom ESLint rules
-  * `eslint.config.mjs` <-- Configuration file for ESLint
-  * `next.config.ts` <-- Configuration file for Next.js
-  * `package.json` <-- Project metadata, dependencies, scripts, and configurations
-  * `tailwind.config.ts` <-- Configuration file for Tailwind CSS
-  * `tsconfig.json` <-- Configuration file for TypeScript
+- `.env` <-- Environmental variables
+- `.gitignore` <-- Files and directories to be ignored by Git
+- `eslint-rules.mjs` <-- Custom ESLint rules
+- `eslint.config.mjs` <-- Configuration file for ESLint
+- `next.config.ts` <-- Configuration file for Next.js
+- `package.json` <-- Project metadata, dependencies, scripts, and configurations
+- `tailwind.config.ts` <-- Configuration file for Tailwind CSS
+- `tsconfig.json` <-- Configuration file for TypeScript
 
 ### Frameworks and libraries
 
